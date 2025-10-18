@@ -5,8 +5,109 @@
     <link rel="icon" type="image/x-icon" href="/Lumina.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lumina</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+
+  <body class="h-screen w-screen bg-[#000000]">
+    <!-- HEADER -->
+    <header class="bg-[#0c0c0c] text-[#FFFFFF] p-2">
+      <nav
+        class="flex justify-between items-center w-[92%] mx-auto playfair-display-400"
+      >
+        <div>
+          <a href="#">
+            <img src="Lumina.png" alt="Logo Lumina" class="w-24" />
+          </a>
+        </div>
+        <div
+          class="nav-links bg-[#0c0c0c] duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 z-20"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] text-lg md:text-xl gap-8"
+          >
+            <li>
+              <a class="hover:text-[#D4AF37]" href="#">O Nas</a>
+            </li>
+            <li>
+              <a class="hover:text-[#D4AF37]" href="#">Oferta</a>
+            </li>
+            <li>
+              <a class="hover:text-[#D4AF37]" href="#">Kontakt</a>
+            </li>
+            <li>
+              <a class="hover:text-[#D4AF37]" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6">
+          <button
+            class="bg-[#f3ab13] px-5 py-2 rounded-full hover:bg-[#e09e0d] cursor-pointer"
+          >
+            Umów się
+          </button>
+          <ion-icon
+            name="menu-outline"
+            class="text-3xl cursor-pointer md:hidden"
+            id="menu-toggle"
+            name="menu-outline"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <!-- HERO SECTION -->
+    <section
+      id="hero"
+      class="relative h-[60vh] bg-cover bg-center flex items-start justify-center lg:justify-start text-white transition-all duration-1000"
+      style="background-image: url('masaz.jpeg')"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div
+        class="relative z-10 text-center lg:text-left px-6 lg:pl-20 max-w-3xl mt-20 md:mt-28"
+      >
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 playfair-display-400"
+        >
+          Witamy w LUMINA A&S – Twojej strefie relaksu i luksusu w Lublinie i
+          okolicach
+        </h1>
+        <p class="text-lg md:text-xl mb-6 mt-10 .lato-regular">
+          LUMINA A&S to wyjątkowa marka, która powstała z pasji do zdrowia,
+          harmonii i troski o dobrostan ciała i umysłu. Oferujemy masaż
+          relaksacyjny premium z dojazdem do klienta w Lublinie i w promieniu 20
+          km, dzięki czemu możesz doświadczyć prawdziwego odprężenia bez
+          wychodzenia z domu.
+        </p>
+        <button
+          class="bg-[#f3ab13] px-5 py-2 rounded-full hover:bg-[#e09e0d] cursor-pointer"
+        >
+          Umów się na masaż
+        </button>
+      </div>
+    </section>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+<!-- https://uicolors.app/generate/f3ab13 -->
