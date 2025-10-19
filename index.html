@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/Lumina.png" />
@@ -27,9 +27,9 @@
     />
   </head>
 
-  <body class="h-screen w-screen bg-[#000000]">
+  <body class="h-screen w-screen bg-[#131313] overflow-x-hidden">
     <!-- HEADER -->
-    <header class="bg-[#0c0c0c] text-[#FFFFFF] p-2">
+    <header class="bg-[#131313] text-[#FFFFFF] p-2">
       <nav
         class="flex justify-between items-center w-[92%] mx-auto playfair-display-400"
       >
@@ -39,28 +39,28 @@
           </a>
         </div>
         <div
-          class="nav-links bg-[#0c0c0c] duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 z-20"
+          class="nav-links bg-[#131313] duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 z-20"
         >
           <ul
             class="flex md:flex-row flex-col md:items-center md:gap-[4vw] text-lg md:text-xl gap-8"
           >
             <li>
-              <a class="hover:text-[#D4AF37]" href="#">O Nas</a>
+              <a class="hover:text-[#D4AF37]" href="#about-us">O Nas</a>
             </li>
             <li>
-              <a class="hover:text-[#D4AF37]" href="#">Oferta</a>
+              <a class="hover:text-[#D4AF37]" href="#offer">Oferta</a>
             </li>
             <li>
-              <a class="hover:text-[#D4AF37]" href="#">Kontakt</a>
+              <a class="hover:text-[#D4AF37]" href="#contact">Kontakt</a>
             </li>
             <li>
-              <a class="hover:text-[#D4AF37]" href="#">FAQ</a>
+              <a class="hover:text-[#D4AF37]" href="#faq">FAQ</a>
             </li>
           </ul>
         </div>
         <div class="flex items-center gap-6">
           <button
-            class="bg-[#f3ab13] px-5 py-2 rounded-full hover:bg-[#e09e0d] cursor-pointer"
+            class="bg-[#be9b48] px-5 py-2 hover:bg-[#d6b057] cursor-pointer"
           >
             Umów się
           </button>
@@ -76,36 +76,283 @@
     <!-- HERO SECTION -->
     <section
       id="hero"
-      class="relative h-[60vh] bg-cover bg-center flex items-start justify-center lg:justify-start text-white transition-all duration-1000"
+      class="relative min-h-[80vh] md:min-h-[65vh] bg-cover bg-center flex items-center justify-center lg:justify-start text-white transition-all duration-1000"
       style="background-image: url('masaz.jpeg')"
     >
       <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 bg-black/60"></div>
 
       <div
-        class="relative z-10 text-center lg:text-left px-6 lg:pl-20 max-w-3xl mt-20 md:mt-28"
+        class="relative z-10 text-center lg:text-left px-4 sm:px-6 lg:pl-20 max-w-3xl"
       >
         <h1
-          class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 playfair-display-400"
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 playfair-display-400 leading-snug text-[#be9b48]"
         >
           Witamy w LUMINA A&S – Twojej strefie relaksu i luksusu w Lublinie i
           okolicach
         </h1>
-        <p class="text-lg md:text-xl mb-6 mt-10 .lato-regular">
-          LUMINA A&S to wyjątkowa marka, która powstała z pasji do zdrowia,
-          harmonii i troski o dobrostan ciała i umysłu. Oferujemy masaż
-          relaksacyjny premium z dojazdem do klienta w Lublinie i w promieniu 20
-          km, dzięki czemu możesz doświadczyć prawdziwego odprężenia bez
-          wychodzenia z domu.
+        <p
+          class="text-base sm:text-lg md:text-xl mb-6 mt-6 playfair-display-400"
+        >
+          Marzysz o chwili tylko dla siebie, bez konieczności wychodzenia z
+          domu? Oferujemy masaż relaksacyjny premium z dojazdem – w Twoim domu,
+          apartamencie lub hotelu stworzymy atmosferę prywatnego SPA, która
+          pozwoli Ci się wyciszyć i głęboko zrelaksować.
         </p>
         <button
-          class="bg-[#f3ab13] px-5 py-2 rounded-full hover:bg-[#e09e0d] cursor-pointer"
+          class="bg-[#be9b48] px-6 py-3 text-sm sm:text-base font-medium hover:bg-[#d6b057] transition-colors cursor-pointer"
         >
           Umów się na masaż
         </button>
       </div>
     </section>
 
+    <!-- Offer section -->
+    <section
+      id="offer"
+      class="text-[#be9b48] playfair-display-400 p-10 text-center font-bold flex flex-col items-center gap-10 mt-5 mb-10"
+    >
+      <h2 class="text-3xl mb-5">Zobacz nasze usługi</h2>
+      <div class="flex flex-wrap justify-center gap-10">
+        <div class="max-w-xs bg-[#202020] text-white overflow-hidden shadow-lg">
+          <img
+            src="masaz4.webp"
+            alt="Masaż Tkanek Głębokich"
+            class="w-full h-56 object-cover"
+          />
+
+          <div class="p-5 text-center">
+            <h3 class="text-xl font-semibold mb-3 text-[#d6b057]">
+              Masaż relaksacyjny premium
+            </h3>
+            <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+              To więcej niż zwykły masaż – to luksusowy rytuał, który działa na
+              ciało, zmysły i umysł. Zabieg wykonywany jest powolnymi, płynnymi
+              ruchami które rozluźniają mięśnie, poprawiają krążenie i redukują
+              napięcie.
+            </p>
+            <div class="flex flex-col gap-3">
+              <button
+                class="border border-[#d6b057] text-[#d6b057] py-2 font-semibold hover:bg-[#d6b057] hover:text-black transition-colors cursor-pointer"
+              >
+                WIĘCEJ
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-xs bg-[#202020] text-white overflow-hidden shadow-lg">
+          <img
+            src="masaz5.webp"
+            alt="Masaż Tkanek Głębokich"
+            class="w-full h-56 object-cover"
+          />
+
+          <div class="p-5 text-center">
+            <h3 class="text-xl font-semibold mb-3 text-[#d6b057]">
+              Masaż woskiem ze świecy
+            </h3>
+            <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+              Jedną z opcji jest masaż świecą, gdzie ciepły, topniejący wosk
+              zamienia się w aksamitny olej do masażu. Działa intensywnie
+              pielęgnująco, głęboko nawilża skórę i pogłębia efekt odprężenia
+              dzięki subtelnym aromatom i przyjemnemu ciepłu.
+            </p>
+            <div class="flex flex-col gap-3">
+              <button
+                class="border border-[#d6b057] text-[#d6b057] py-2 font-semibold hover:bg-[#d6b057] hover:text-black transition-colors cursor-pointer"
+              >
+                WIĘCEJ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- who are we section -->
+    <section
+      id="about-us"
+      class="relative text-[#be9b48] playfair-display-400 p-10 text-center font-bold flex flex-col items-center justify-center gap-10 bg-cover bg-center min-h-[30vh]"
+      style="background-image: url('masaz2.jpg')"
+    >
+      <div class="absolute inset-0 bg-[#131313]/85"></div>
+
+      <div class="relative z-10">
+        <h2 class="text-3xl mb-5">Kim jesteśmy?</h2>
+        <div class="max-w-4xl text-white overflow-hidden p-5 rounded-lg">
+          <p class="text-md text-gray-300 mb-6 leading-relaxed">
+            Jesteśmy zespołem doświadczonych i certyfikowanych masażystów,
+            którzy z pasją podchodzą do swojej pracy. Naszym celem jest
+            zapewnienie najwyższej jakości usług, które przynoszą ulgę, relaks i
+            poprawę samopoczucia naszym klientom. W LUMINA A&S wierzymy, że
+            każdy zasługuje na chwilę wytchnienia i luksusu, dlatego dokładamy
+            wszelkich starań, aby każda wizyta była wyjątkowym doświadczeniem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- why us section -->
+    <section
+      class="text-[#be9b48] playfair-display-400 p-10 text-center font-bold flex flex-col items-center gap-10 mt-5 mb-10"
+    >
+      <h2 class="text-3xl mb-5">Dlaczego warto wybrać LUMINA A&S?</h2>
+      <div class="flex flex-wrap justify-center gap-10">
+        <div
+          class="max-w-xs bg-[#202020] text-white overflow-hidden shadow-lg p-5 hover:shadow-sm hover:shadow-[#242424] hover:scale-102 transition-all duration-300"
+        >
+          <h3 class="text-xl font-semibold mb-3 text-[#d6b057]">
+            Najważniejsze jest Twoje dobre samopoczucie
+          </h3>
+          <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+            Każdy masaż traktujemy jako indywidualne doświadczenie – wsłuchujemy
+            się w Twoje potrzeby i tworzymy oprawę, która pozwala Ci w pełni
+            odpocząć.
+          </p>
+        </div>
+        <div
+          class="max-w-xs bg-[#202020] text-white overflow-hidden shadow-lg p-5 hover:shadow-sm hover:shadow-[#242424] hover:scale-102 transition-all duration-300"
+        >
+          <h3 class="text-xl font-semibold mb-3 text-[#d6b057]">
+            Komfort i wygoda
+          </h3>
+          <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+            Oferujemy masaże w Twoim domu lub miejscu pracy, eliminując stres
+            związany z dojazdem i pozwalając Ci w pełni się zrelaksować.
+          </p>
+        </div>
+        <div
+          class="max-w-xs bg-[#202020] text-white overflow-hidden shadow-lg p-5 hover:shadow-sm hover:shadow-[#242424] hover:scale-102 transition-all duration-300"
+        >
+          <h3 class="text-xl font-semibold mb-3 text-[#d6b057]">
+            Spersonalizowane podejście
+          </h3>
+          <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+            Każdy masaż dostosowujemy do Twoich indywidualnych potrzeb i
+            preferencji, aby zapewnić maksymalną skuteczność i satysfakcję.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section
+      id="contact"
+      class="text-[#be9b48] playfair-display-400 p-10 text-center font-bold flex flex-col md:flex-row items-start md:items-center gap-10 mt-5 mb-10"
+    >
+      <!-- Formularz kontaktowy -->
+      <div id="contact-form" class="w-full md:w-1/2">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <form action="#" class="space-y-6">
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-[#be9b48]"
+              >
+                Twój email
+              </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="adres@poczta.com"
+                required
+                class="w-full p-3 text-sm border border-[#be9b48] shadow-sm focus:ring-2 focus:ring-[#be9b48] focus:border-[#be9b48] placeholder:text-[#be9b48]"
+              />
+            </div>
+
+            <div>
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-medium text-[#be9b48]"
+              >
+                Temat
+              </label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="Powiedz nam, jak możemy Ci pomóc"
+                required
+                class="w-full p-3 text-sm border border-[#be9b48] shadow-sm focus:ring-2 focus:ring-[#be9b48] focus:border-[#be9b48] placeholder:text-[#be9b48]"
+              />
+            </div>
+
+            <div>
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-[#be9b48]"
+              >
+                Twoja wiadomość
+              </label>
+              <textarea
+                id="message"
+                rows="6"
+                placeholder="Zostaw wiadomość..."
+                class="w-full p-3 text-sm border border-[#be9b48] shadow-sm focus:ring-2 focus:ring-[#be9b48] focus:border-[#be9b48] placeholder:text-[#be9b48]"
+              ></textarea>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                type="reset"
+                class="flex-1 py-3 px-5 text-sm font-medium text-white bg-[#be9b48] hover:bg-[#d6b057] cursor-pointer"
+              >
+                Wyczyść
+              </button>
+              <button
+                type="submit"
+                class="flex-1 py-3 px-5 text-sm font-medium text-white bg-[#be9b48] hover:bg-[#d6b057] cursor-pointer"
+              >
+                Wyślij wiadomość
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Informacje kontaktowe -->
+      <div
+        class="w-full md:w-1/2 text-left flex flex-col items-center md:items-start gap-6"
+      >
+        <h2 class="text-3xl font-bold mb-2">Skontaktuj się z nami</h2>
+        <p class="text-md text-gray-300 leading-relaxed max-w-2xl">
+          Masz pytania lub chcesz umówić się na masaż? Jesteśmy tutaj, aby Ci
+          pomóc! Skontaktuj się z nami telefonicznie pod numerem
+          <a href="tel:123-456-789" class="text-[#be9b48] font-semibold"
+            >123-456-789</a
+          >
+          lub napisz do nas na adres e-mail
+          <a
+            href="mailto:kontakt@lumina.pl"
+            class="text-[#be9b48] font-semibold"
+            >kontakt@lumina.pl</a
+          >. Możesz również skorzystać z formularza kontaktowego na naszej
+          stronie internetowej. Czekamy na Twój kontakt!
+        </p>
+
+        <!-- Logo i social media -->
+        <div class="flex items-center gap-10 mt-4">
+          <a href="/"
+            ><img src="Lumina.png" alt="Logo Lumina" class="h-20 md:h-24"
+          /></a>
+          <a
+            href="#"
+            class="text-[#be9b48] text-7xl hover:text-[#6e5416] transition-all"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="#"
+            class="text-[#be9b48] text-7xl hover:text-[#6e5416] transition-colors"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/61a1475d1e.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
