@@ -10,3 +10,34 @@
   font-weight: 400;
   font-style: normal;
 }
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, #52421f, #635127, #be9b48);
+  background-size: 200% 100%;
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.header-links {
+  position: relative;
+}
+.header-links::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #d4af37;
+  transition: width 0.3s;
+}
+.header-links:hover::after {
+  width: 100%;
+}
