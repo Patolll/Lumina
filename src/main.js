@@ -9,10 +9,12 @@ AOS.init();
 
 // mobile menu toggle
 const navLinks = document.querySelector(".nav-links");
-document.getElementById("menu-toggle").addEventListener("click", function (e) {
+const toggleBtn = document.getElementById("menu-toggle");
+
+toggleBtn.addEventListener("click", (e) => {
   e.target.name =
     e.target.name === "menu-outline" ? "close-outline" : "menu-outline";
-  navLinks.classList.toggle("top-[11%]");
+  navLinks.classList.toggle("hidden");
 });
 
 // Hero slider
