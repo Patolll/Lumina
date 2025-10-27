@@ -14,7 +14,7 @@ const toggleBtn = document.getElementById("menu-toggle");
 toggleBtn.addEventListener("click", (e) => {
   e.target.name =
     e.target.name === "menu-outline" ? "close-outline" : "menu-outline";
-  navLinks.classList.toggle("hidden");
+  navLinks.classList.toggle("top-[10%]");
 });
 
 // Hero slider
