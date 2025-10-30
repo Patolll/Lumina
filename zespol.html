@@ -96,56 +96,149 @@
     </header>
 
     <div class="section-divider"></div>
-    <!-- MAIN -->
     <main
-      class="font-playfair-display w-[92%] mx-auto flex-1 pb-16 bg-gradient-to-r from-[#131313] via-[#1a1a1a] to-[#131313] flex justify-center items-center"
+      class="lato-regular w-[92%] mx-auto flex-1 py-24 bg-gradient-to-r from-[#131313] via-[#1a1a1a] to-[#131313] flex flex-col items-center"
     >
-      <div
-        class="bg-gradient-to-br from-[#202020] to-[#2a2a2a] px-10 py-10 mt-10 shadow-2xl flex justify-center items-center flex-col max-w-4xl animate-fadeInUp"
+      <h1
+        class="playfair-display-400 text-[#d6b057] text-4xl md:text-5xl font-bold text-center mb-20 tracking-wide"
+        data-aos="fade-down"
       >
-        <!-- Ikona -->
-        <i
-          class="fa-regular fa-circle-check text-green-500 text-8xl flip-left animate-pulse mb-5"
-        ></i>
+        Nasi Specjaliści
+      </h1>
 
-        <!-- Nagłówek -->
-        <h1
-          class="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#be9b48] to-[#ffd700] mb-2"
+      <div class="flex flex-col gap-32 w-full max-w-6xl">
+        <!-- Adrian Zubrycki -->
+        <section
+          class="flex flex-col md:flex-row items-center gap-12"
+          data-aos="fade-up"
         >
-          Dziękujemy za przesłanie formularza!
-        </h1>
+          <div class="relative group">
+            <img
+              src="adrian.jpg"
+              alt="Adrian Zubrycki – Trener personalny i masażysta"
+              class="w-64 h-64 object-cover border-4 border-[#d6b057] shadow-lg transition-transform duration-700 group-hover:scale-105 group-hover:shadow-[#d6b057]/40"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+            ></div>
+          </div>
 
-        <!-- Podtytuł -->
-        <p class="text-gray-300 text-center mb-6">
-          Skontaktujemy się z tobą w przeciągu kilku dni roboczych
+          <div class="flex-1 text-center md:text-left">
+            <h2
+              class="playfair-display-400 text-3xl text-[#d6b057] font-semibold mb-4"
+            >
+              Adrian Zubrycki
+            </h2>
+            <p class="text-gray-300 leading-relaxed mb-6">
+              Adrian to certyfikowany trener personalny z wykształceniem w
+              fizjoterapii oraz wieloletnim doświadczeniem w pracy z klientami o
+              różnych potrzebach zdrowotnych i treningowych. Specjalizuje się
+              również w masażu, łącząc techniki relaksacyjne i terapeutyczne w
+              celu poprawy mobilności, redukcji napięcia mięśniowego oraz
+              regeneracji po wysiłku.
+            </p>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              W swojej pracy stawia na połączenie siły i świadomości ciała —
+              zarówno w kontekście treningu, jak i terapii manualnej. Każda
+              sesja z Adrianem to indywidualne podejście, dopasowane do
+              kondycji, stylu życia i celów klienta. Wykorzystuje wiedzę z
+              zakresu anatomii i biomechaniki, by w sposób precyzyjny usuwać
+              przyczyny napięć i przeciążeń.
+            </p>
+            <p class="text-gray-400 leading-relaxed">
+              Dzięki połączeniu treningu funkcjonalnego i masażu terapeutycznego
+              Adrian pomaga klientom nie tylko odzyskać sprawność, ale też
+              poczuć lekkość i głęboki relaks. Każdy zabieg to chwila oddechu i
+              powrotu do równowagi — zarówno fizycznej, jak i psychicznej.
+            </p>
+
+            <div class="flex gap-4 mt-6 justify-center md:justify-start">
+              <ion-icon
+                name="logo-instagram"
+                class="text-2xl text-[#d6b057] hover:text-white transition-colors cursor-pointer"
+              ></ion-icon>
+              <ion-icon
+                name="logo-facebook"
+                class="text-2xl text-[#d6b057] hover:text-white transition-colors cursor-pointer"
+              ></ion-icon>
+            </div>
+          </div>
+        </section>
+
+        <!-- Złoty separator -->
+        <div
+          class="w-full h-[1px] bg-[#d6b057]/30 blur-[1px] shadow-[0_0_12px_#d6b05780]"
+          data-aos="fade-in"
+        ></div>
+
+        <!-- Sandra Kowalska -->
+        <section
+          class="flex flex-col md:flex-row-reverse items-center gap-12"
+          data-aos="fade-up"
+        >
+          <div class="relative group">
+            <img
+              src="adrian.jpg"
+              alt="kolega – Specjalista masażu"
+              class="w-64 h-64 object-cover border-4 border-[#d6b057] shadow-lg transition-transform duration-700 group-hover:scale-105 group-hover:shadow-[#d6b057]/40"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+            ></div>
+          </div>
+
+          <div class="flex-1 text-center md:text-right">
+            <h2
+              class="playfair-display-400 text-3xl text-[#d6b057] font-semibold mb-4"
+            >
+              kolega
+            </h2>
+            <p class="text-gray-300 leading-relaxed mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum nec metus et felis iaculis placerat. Nulla facilisi.
+              Integer faucibus arcu nec odio vestibulum, vel porta nulla
+              viverra. Suspendisse potenti.
+            </p>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Phasellus interdum, erat vel fermentum tincidunt, felis mauris
+              blandit lacus, non elementum nisi ligula sed lorem. Cras dapibus
+              nunc in mauris vulputate, et efficitur nulla volutpat. Maecenas
+              vehicula ligula sit amet libero viverra, nec mattis elit euismod.
+            </p>
+            <p class="text-gray-400 leading-relaxed">
+              Integer bibendum magna id sem suscipit, a eleifend urna posuere.
+              Sed aliquam risus id neque tincidunt, vel feugiat odio varius.
+              Duis nec enim in ipsum tempor porttitor sed et turpis.
+            </p>
+
+            <div class="flex gap-4 mt-6 justify-center md:justify-end">
+              <ion-icon
+                name="logo-instagram"
+                class="text-2xl text-[#d6b057] hover:text-white transition-colors cursor-pointer"
+              ></ion-icon>
+              <ion-icon
+                name="logo-facebook"
+                class="text-2xl text-[#d6b057] hover:text-white transition-colors cursor-pointer"
+              ></ion-icon>
+            </div>
+          </div>
+        </section>
+
+        <!-- Złoty separator -->
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-32 text-center" data-aos="zoom-in">
+        <p class="text-gray-300 text-lg mb-6">
+          Zaufaj naszym specjalistom i odkryj nowy wymiar relaksu, siły i
+          świadomości ciała. Twoje zdrowie zaczyna się od chwili odpoczynku.
         </p>
-
-        <!-- Przycisk -->
         <a
-          href="/index.html"
-          class="mt-2 px-6 py-3 bg-[#be9b48] text-white font-medium shadow-lg transform transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-[#a6853d]"
+          href="/index.html#contact-form"
+          class="py-3 px-10 shadow-xl text-sm font-large text-white bg-[#be9b48] hover:bg-[#926a0e] hover:scale-110 cursor-pointer transform transition-all duration-300 inline-block"
         >
-          Powrót do strony głównej
+          Umów wizytę
         </a>
-
-        <!-- Divider -->
-        <hr class="w-16 border-t-2 border-[#be9b48] my-6" />
-
-        <!-- Ikony społecznościowe -->
-        <div class="flex gap-6">
-          <a
-            href="#"
-            class="text-gray-400 transform transition duration-300 hover:text-[#be9b48] hover:scale-110 hover:rotate-6"
-          >
-            <i class="fab fa-facebook text-5xl"></i>
-          </a>
-          <a
-            href="#"
-            class="text-gray-400 transform transition duration-300 hover:text-[#be9b48] hover:scale-110 hover:rotate-6"
-          >
-            <i class="fab fa-instagram text-5xl"></i>
-          </a>
-        </div>
       </div>
     </main>
 

@@ -73,3 +73,64 @@ document.querySelectorAll(".faq-toggle").forEach((btn) => {
     }
   });
 });
+
+const slider = document.getElementById("opinie-slider");
+const sliderItems = slider.children;
+let currentIndex = 0;
+let autoSlideInterval;
+
+// Funkcja pokazująca dany slajd
+function showSlide(index) {
+  const screenWidth = window.innerWidth;
+  let itemsPerView = 1;
+
+  if (screenWidth >= 1024) itemsPerView = 3;
+  else if (screenWidth >= 640) itemsPerView = 2;
+
+  const offset = index * (sliderItems[0].offsetWidth + 24); // szerokość + gap
+  slider.style.transform = `translateX(-${offset}px)`;
+}
+
+// Funkcja do przejścia do następnego slajdu
+function nextSlide() {
+  const screenWidth = window.innerWidth;
+  let itemsPerView = 1;
+  if (screenWidth >= 1024) itemsPerView = 3;
+  else if (screenWidth >= 640) itemsPerView = 2;
+
+  const maxIndex = sliderItems.length - itemsPerView;
+  currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+  showSlide(currentIndex);
+}
+
+// Start automatycznego przesuwania
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, 10000);
+}
+
+// Zatrzymanie automatycznego przesuwania
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// Obsługa przycisków
+document.getElementById("prev-opinie").addEventListener("click", () => {
+  currentIndex = Math.max(currentIndex - 1, 0);
+  showSlide(currentIndex);
+});
+document.getElementById("next-opinie").addEventListener("click", nextSlide);
+
+// Zatrzymywanie automatycznego przesuwania przy najechaniu lub dotyku
+slider.addEventListener("mouseenter", stopAutoSlide);
+slider.addEventListener("mouseleave", startAutoSlide);
+slider.addEventListener("touchstart", stopAutoSlide);
+slider.addEventListener("touchend", startAutoSlide);
+
+// Aktualizacja przy zmianie rozmiaru ekranu
+window.addEventListener("resize", () => {
+  showSlide(currentIndex);
+});
+
+// Pokazanie pierwszego widoku i start slidera
+showSlide(currentIndex);
+startAutoSlide();

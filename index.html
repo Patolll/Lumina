@@ -25,7 +25,7 @@
     />
   </head>
 
-  <body class="h-screen w-screen bg-[#131313] overflow-x-hidden">
+  <body class="h-screen max-w-screen bg-[#131313] overflow-x-hidden">
     <!-- HEADER -->
     <header class="bg-[#131313] text-[#FFFFFF] p-2">
       <nav
@@ -67,11 +67,12 @@
           </ul>
         </div>
         <div class="flex items-center gap-6">
-          <button
+          <a
+            href="#contact-form"
             class="border border-[#d6b057] text-[#d6b057] py-2 px-4 shadow-2xl font-semibold hover:bg-[#d6b057] hover:text-black cursor-pointer transform transition-all duration-300"
           >
             Umów się
-          </button>
+          </a>
           <ion-icon
             name="menu-outline"
             class="text-3xl cursor-pointer md:hidden"
@@ -110,11 +111,12 @@
           apartamencie lub hotelu stworzymy atmosferę prywatnego SPA, która
           pozwoli Ci się wyciszyć i głęboko zrelaksować.
         </p>
-        <button
+        <a
+          href="#contact-form"
           class="border shadow-2xl border-[#d6b057] text-[#d6b057] py-2 px-4 font-semibold hover:bg-[#d6b057] hover:text-black cursor-pointer transform transition-all duration-300"
         >
           Umów się na masaż
-        </button>
+        </a>
       </div>
     </section>
 
@@ -212,7 +214,7 @@
         </div>
         <div>
           <a
-            href=""
+            href="/zespol.html"
             class="flex-1 py-3 px-5 text-sm font-medium text-white bg-[#be9b48] hover:bg-[#926a0e] cursor-pointer transform transition-all duration-300"
           >
             Poznaj naszych specjalistów
@@ -409,6 +411,281 @@
         </div>
       </div>
     </section>
+    <!-- OPINIE -->
+    <section id="opinie" class="bg-[#131313] text-white py-20 px-6">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2
+          class="text-4xl font-semibold text-[#be9b48] mb-4 playfair-display-400"
+        >
+          Opinie naszych klientów
+        </h2>
+        <p class="text-gray-400 text-sm md:text-base">
+          Zobacz, co mówią osoby, które skorzystały z naszych usług.
+        </p>
+      </div>
+
+      <!-- Slider -->
+      <div class="relative max-w-6xl mx-auto overflow-hidden">
+        <div
+          id="opinie-slider"
+          class="flex transition-transform duration-700 gap-6"
+        >
+          <!-- 10 opinii -->
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Profesjonalizm i komfort w domu. Polecam każdemu!”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Anna, Lublin</span
+            >
+          </div>
+
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Świetna atmosfera, pełen relaks bez wychodzenia z domu.”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Katarzyna, Świdnik</span
+            >
+          </div>
+
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Bardzo profesjonalne podejście i cudowny relaks.”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Marek, Lublin</span
+            >
+          </div>
+
+          <!-- Dodaj pozostałe 7 opinii analogicznie -->
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Bardzo przyjemny masaż, polecam każdemu, kto potrzebuje relaksu.”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Paweł, Lublin</span
+            >
+          </div>
+
+          <!-- powtórz dla pozostałych opinii -->
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Profesjonalny masaż, czysto i przyjemnie, pełen relaks.”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Marta, Lublin</span
+            >
+          </div>
+
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Fantastyczny masaż, atmosfera idealna do relaksu.”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Ewa, Świdnik</span
+            >
+          </div>
+
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Pełen profesjonalizm i cudowny relaks w domowym zaciszu.”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Tomasz, Lublin</span
+            >
+          </div>
+
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Najlepszy masaż w Lublinie! Serdecznie polecam.”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Joanna, Lublin</span
+            >
+          </div>
+
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Czysto, przyjemnie i profesjonalnie. Polecam każdemu!”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Maciej, Świdnik</span
+            >
+          </div>
+
+          <div
+            class="flex-shrink-0 bg-[#181616] border border-[#be9b48] p-6 text-left h-[260px] relative shadow-[0_0_15px_rgba(190,155,72,0.3)] w-full sm:w-[48%] lg:w-[30%]"
+          >
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <img
+                src="Lumina.png"
+                alt="Logo Lumina"
+                class="w-10 h-10 opacity-90"
+              />
+              <div class="text-[#d6b057] text-sm sm:text-base">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-300 italic leading-relaxed text-sm mt-10">
+              „Bardzo przyjemny masaż, idealny do relaksu po pracy.”
+            </p>
+            <span class="text-[#be9b48] font-semibold text-sm block mt-3"
+              >– Agnieszka, Lublin</span
+            >
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-6 mt-4">
+          <button
+            id="prev-opinie"
+            class="text-3xl text-[#be9b48] hover:text-[#d6b057] cursor-pointer"
+          >
+            &#10094;
+          </button>
+          <button
+            id="next-opinie"
+            class="text-3xl text-[#be9b48] hover:text-[#d6b057] cursor-pointer"
+          >
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
 
     <div class="section-divider"></div>
 
@@ -511,35 +788,38 @@
         <div class="flex flex-col gap-5">
           <a
             href="tel:123-456-789"
-            class="text-[#be9b48] font-semibold text-2xl hover:text-[#6e5416]"
+            class="text-[#be9b48] font-semibold text-2xl hover:text-[#6e5416] duration-300 transition-all"
             ><i class="fa-solid fa-phone"></i> 123-456-789</a
           >
           <a
             href="mailto:kontakt@lumina.pl"
-            class="text-[#be9b48] font-semibold text-2xl hover:text-[#6e5416]"
+            class="text-[#be9b48] font-semibold text-2xl hover:text-[#6e5416] duration-300 transition-all"
             ><i class="fa-solid fa-envelope"></i> kontakt@lumina.pl</a
           >
         </div>
 
         <div class="flex items-center gap-10 mt-4">
           <a data-aos="fade-up" data-aos-delay="400" href="/"
-            ><img src="Lumina.png" alt="Logo Lumina" class="h-16 md:h-22"
+            ><img
+              src="Lumina.png"
+              alt="Logo Lumina"
+              class="h-16 md:h-22 hover:scale-105 duration-300"
           /></a>
           <a
             data-aos="fade-up"
             data-aos-delay="600"
             href="#"
-            class="text-[#be9b48] text-6xl hover:text-[#6e5416] transition-all"
+            class="text-[#be9b48] text-6xl hover:text-[#6e5416]"
           >
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook duration-300 transition-all"></i>
           </a>
           <a
             data-aos="fade-up"
             data-aos-delay="800"
             href="#"
-            class="text-[#be9b48] text-6xl hover:text-[#6e5416] transition-all"
+            class="text-[#be9b48] text-6xl hover:text-[#6e5416]"
           >
-            <i class="fab fa-instagram"></i>
+            <i class="fab fa-instagram duration-300 transition-all"></i>
           </a>
         </div>
       </div>
@@ -634,10 +914,10 @@
 
         <!-- Social media -->
         <div class="flex items-center justify-center gap-6 text-3xl">
-          <a href="#" class="hover:text-[#d6b057] transition-colors"
+          <a href="#" class="hover:text-[#6e5416] transition-colors"
             ><i class="fab fa-facebook"></i
           ></a>
-          <a href="#" class="hover:text-[#d6b057] transition-colors"
+          <a href="#" class="hover:text-[#6e5416] transition-colors"
             ><i class="fab fa-instagram"></i
           ></a>
         </div>
